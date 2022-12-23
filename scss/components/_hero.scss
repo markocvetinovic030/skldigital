@@ -1,2 +1,76 @@
 @import '../base/mixin';
 @import '../base/vars';
+
+main {
+    .hero {
+        #wallpaper {
+            background-image: url(../img/wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            background-position: 0px -50px;
+            height: 1000px;
+
+            .frame {
+                padding-top: 350px;
+
+                #carouselExampleControls {
+                    animation: slideIn 3s;
+                    .carousel-inner {
+                        text-align: center;
+
+                        h1 {
+                            font-size: 60px;
+                            color: white;
+                            margin-bottom: 30px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            max-width: 60%;
+                            margin: 0 auto;
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+                        .button-frame {
+                            @include flex-box;
+                            width: 450px;
+                            margin: 0 auto;
+                            margin-top: 30px;
+
+                            button {
+                                width: 170px;
+                                height: 40px;
+                                background: none;
+                                border: 2px solid white;
+                                outline: none;
+                                color: white;
+                                font-size: 1.1em;
+                                font-weight: 500;
+                                &:hover {
+                                    background: white;
+                                    transition: 1s all;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 10;
+    }
+  }
+
+
+

@@ -1,0 +1,115 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main {
+    .section-five {
+        .flex-box {
+            @include flex-box;
+
+            .left {
+                width: 50%;
+                .wallpaper {
+                    width: 100%;
+                    background-image: url(../img/mw.jpg);
+                    padding: 150px 20px 120px 20px;
+                    .text-frame{
+                        @include gray-gradient;
+                        width: 80%;
+                        margin: 0 auto;
+                        padding: 50px 30px;
+                        color: white;
+                        p{
+                            font-size: 15px;
+                        }
+                        img{
+                            width: 50px;
+                            margin-bottom: 20px;
+                        }
+                        .main-p{
+                            font-weight: 600;
+                            font-size: 20px;
+                            margin-bottom: 20px;
+                        }
+                        button{
+                            width: 150px;
+                            height: 40px;
+                            background: none;
+                            border: 2px solid white;
+                            color: white;
+                            font-weight: 600;
+                            font-size: 13px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+                width: 50%;
+                background-color: $lightGray;
+                h5{
+                    font-weight: 600;
+                    text-align: left;
+                    font-size: 25px;
+                    padding-top: 50px;
+                    padding-left: 50px;
+                }
+                .line1 {
+                    height: 2px;
+                    width: 80px;
+                    background-color: $black;
+                    margin-bottom: 8px;
+                    margin-top: 20px;
+                    margin-left: 50px;
+                }
+    
+                .line2 {
+                    height: 2px;
+                    width: 60px;
+                    background-color: $black;
+                    margin-bottom: 8px;
+                    margin-left: 50px;
+                }
+    
+                .line3 {
+                    height: 2px;
+                    width: 40px;
+                    background-color: $black;
+                    margin-bottom: 100px;
+                    margin-left: 50px;
+                }
+
+                .grid{
+                    .row{
+                        width: 90%;
+                        margin: 0 auto;
+                        .col{
+                            padding: 20px 0px;
+                            &:hover {
+                                .black{
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                                .gray{
+                                    display: none;
+                                }
+                                p{
+                                    color: black;
+                                }
+                            }
+                            .black{
+                                display: none;
+                            }
+                            p{
+                                font-weight: 600;
+                                color: #6E6E6F;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

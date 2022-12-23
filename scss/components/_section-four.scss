@@ -1,0 +1,59 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main{
+    .section-four{
+        .container{
+            h4{
+                padding-top: 50px;
+                font-weight: 600;
+                font-size: 25px;
+            }
+            .line1 {
+                height: 2px;
+                width: 80px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+                margin-top: 20px;
+            }
+
+            .line2 {
+                height: 2px;
+                width: 60px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+            }
+
+            .line3 {
+                height: 2px;
+                width: 40px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 100px;
+            }
+            .flex-box{
+                @include flex-box;
+                .circle-frame{
+                    margin-bottom: 50px;
+                    p{
+                        font-weight: 600;
+                        margin-top: 30px;
+                    }
+                    .circle{
+                        width: 150px;
+                        height: 150px;
+                        border: 5px solid black;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        p{
+                            padding-top: 25px;
+                            color: $darkGray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

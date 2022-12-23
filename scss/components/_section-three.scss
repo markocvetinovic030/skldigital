@@ -1,0 +1,59 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main{
+    .section-three{
+        .flex-box{
+            @include flex-box;
+        }
+        .left{
+            width: 60%;
+            padding: 49px 50px;
+            border-bottom: 2px solid $borderGray;
+            .row{
+                .col{
+                    text-align: left;
+                    padding-left: 30px;
+                    .top{
+                        padding-top: 10px;
+                        img{
+                            width: 60px;
+                            margin-bottom: 10px;
+                        }
+                        .main-p{
+                            display: inline-block;
+                            font-weight: bold;
+                            font-size: 18px;
+                            padding: 20px 0px 0px 20px ;
+                        }
+                    }
+
+                    .bottom{
+                        margin-top: 20px;
+                        p{
+                            font-size: 15px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                    &:nth-child(1){
+                        border-bottom: 2px solid $borderGray;
+                        
+                        margin: 10px;
+                    }
+                    &:nth-child(2){
+                        border-bottom: 2px solid $borderGray;
+                        margin: 10px;
+                    }
+                    
+                }
+            }
+        }
+        .right{
+            width: 40%;
+            border-bottom: 2px solid $borderGray;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

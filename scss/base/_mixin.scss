@@ -1,0 +1,14 @@
+@mixin flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin header-gradient {
+    background: rgb(17, 17, 17);
+    background: radial-gradient(circle, rgba(17, 17, 17, 0.8155637254901961) 100%, rgba(17, 17, 17, 1) 100%);
+}
+
+@mixin gray-gradient {
+    background: rgb(86,86,86);
+background: radial-gradient(circle, rgba(86,86,86,0.8519782913165266) 100%, rgba(86,86,86,1) 100%);
+}

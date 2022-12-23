@@ -1,0 +1,53 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+.section-two{
+    background-color: $lightGray;
+    padding: 70px 0px;
+    animation: slideIn 3s;
+    .container{
+        h3{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .line1 {
+            height: 2px;
+            width: 70px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+
+        .line2 {
+            height: 2px;
+            width: 50px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        .line3 {
+            height: 2px;
+            width: 30px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 10;
+    }
+  }
+

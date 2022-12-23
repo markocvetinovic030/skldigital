@@ -1,3 +1,60 @@
 @import '../base/mixin';
 @import '../base/vars';
 
+header{
+    padding: 40px 0px 15px 0px;
+    animation: slideIn 2s;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .container{
+        .flex-box{
+            @include flex-box;
+            .left-box{
+                width: 40%;
+                p{
+                    font-size: 1.1em;
+                    border: 2px solid white;
+                    color: white;
+                    display: inline-block;
+                    padding: 0px 15px;
+                    @include header-gradient;
+                    b{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            .right-box{
+                width: 60%;
+                nav{
+                    padding-top: 5px;
+                    ul{
+                        @include flex-box;
+                        li{
+                            display: inline-block;
+                            a{
+                                color: white;
+                                font-size: 15px;
+                                font-weight: 600;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes slideIn {
+    /* Kada se animacija počne, postavite element da se pojavi sa desne strane ekrana */
+    0% {
+      opacity: 0;
+    }
+    /* Kada se animacija završi, postavite element na svoje mjesto */
+    100% {
+      opacity: 10;
+    }
+  }
+  

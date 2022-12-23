@@ -1,0 +1,112 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main {
+    text-align: center;
+
+    .section-one {
+        animation: slideIn 3s;
+        margin: 100px 0px;
+        .container {
+            h2 {
+                font-weight: 600;
+            }
+
+            .laptop{
+                margin-top: 80px;
+                width: 800px;
+            }
+            .line1 {
+                height: 2px;
+                width: 80px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+                margin-top: 20px;
+            }
+
+            .line2 {
+                height: 2px;
+                width: 60px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+            }
+
+            .line3 {
+                height: 2px;
+                width: 40px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 100px;
+            }
+
+            .card-frame {
+                @include flex-box;
+
+                .cards{
+                    width: 30%;
+                    p{
+                        font-size: 15px;
+                        margin-top: 30px;
+                    }
+                    .main-p{
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                    button{
+                        width: 150px;
+                        height: 40px;
+                        outline: none;
+                        border: 1px solid $normalGray;
+                        background: none;
+                        font-weight: 600;
+                    }
+                    &:hover .img-frame{
+                        background-color: black;
+                        transition: 1s all;
+                        img{
+                            display: none;
+                        }
+                        .grayimg{
+                            display: block;
+                        }
+                    }
+
+                    &:hover button{
+                        background-color: black;
+                        color: white;
+                        transition: 1s all;
+                    }
+
+                    .img-frame{
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                        border-radius: 50%;
+                        img{
+                            width: 50px;
+                            margin: 0 auto;
+                            padding-top: 22px;
+                        }
+                        .grayimg{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 10;
+    }
+  }
