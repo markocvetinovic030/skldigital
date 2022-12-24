@@ -1,2 +1,93 @@
 @import '../base/mixin';
 @import '../base/vars';
+
+main{
+    .section-six{
+        h6{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 100px;
+            
+        }
+        .line1 {
+            height: 2px;
+            width: 70px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            margin-top: 20px;
+        }
+
+        .line2 {
+            height: 2px;
+            width: 50px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        .line3 {
+            height: 2px;
+            width: 30px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        #cp{
+            color: #6E6E6F;
+            font-weight: 600;
+            margin-bottom: 100px
+        }
+        .container{
+            .flex-box{
+                @include flex-box;
+                .left{
+                    margin-top: 50px;
+                    .cards{
+                        margin-bottom: 40px;
+                        text-align: right;
+                        padding-right: 30px;
+                        img{
+                            width: 30px;
+                        }
+                        p{
+                            color: #6E6E6F;
+                        }
+                        .main-p{
+                            font-weight: bold;
+                            font-size: 18px;
+                            margin-top: 10px;
+                            color: black;
+                        }
+                    }
+                }
+                .right{
+                    margin-top: 50px;
+                    .cards{
+                        margin-bottom: 40px;
+                        text-align: left;
+                        padding-left: 30px;
+                        img{
+                            width: 30px;
+                        }
+                        p{
+                            color: #6E6E6F;
+                        }
+                        .main-p{
+                            font-weight: bold;
+                            font-size: 18px;
+                            margin-top: 10px;
+                            color: black;
+                        }
+                    }
+                }
+                .middle{
+                    img{
+                        width: 320px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

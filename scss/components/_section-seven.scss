@@ -1,0 +1,31 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main{
+    .section-seven{
+        margin-top: 50px;
+        .wallpaper{
+            background-image: url(../img/background2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .gradient{
+                @include gray-gradient;
+                padding: 100px 0px;
+                .flex-box{
+                    @include flex-box;
+                    .cards{
+                        color: white;
+                        p{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        .main-p{
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

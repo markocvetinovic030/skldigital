@@ -1,0 +1,44 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+main{
+    .section-eight{
+        background-color: $lightGray;
+        padding: 50px 0px;
+        .container{
+            h6{
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .line1 {
+                height: 1px;
+                width: 80px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+                margin-top: 20px;
+            }
+
+            .line2 {
+                height: 1px;
+                width: 60px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 8px;
+            }
+
+            .line3 {
+                height: 1px;
+                width: 40px;
+                background-color: $black;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            p{
+                font-weight: 500;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}

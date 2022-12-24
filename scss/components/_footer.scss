@@ -1,0 +1,76 @@
+@import '../base/mixin';
+@import '../base/vars';
+
+footer {
+    margin-top: 700px;
+    padding: 50px 0px;
+    color: white;
+    background-color: $black;
+
+    .flex-box {
+        @include flex-box;
+
+        .first {
+            width:25%;
+            padding: 20px 30px;
+            p{
+                font-size: 15px;
+                margin-top: 30px;
+            }
+            .logo {
+                p {
+                    font-size: 1.1em;
+                    border: 2px solid white;
+                    color: white;
+                    display: inline-block;
+                    padding: 0px 15px;
+                    margin-top: 0px;
+                    @include header-gradient;
+
+                    b {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+
+        .second {
+            width: 25%;
+            padding: 20px 30px;
+            .main-p{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+            #links{
+                a{
+                    color: white;
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .third {
+            width: 25%;
+            padding: 20px 30px; 
+            .main-p{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .fourth {
+            width: 25%;
+            padding: 20px 30px;
+            .main-p{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

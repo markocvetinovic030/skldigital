@@ -76,7 +76,7 @@ main {
                     height: 2px;
                     width: 40px;
                     background-color: $black;
-                    margin-bottom: 100px;
+                    margin-bottom: 50px;
                     margin-left: 50px;
                 }
 
@@ -86,10 +86,13 @@ main {
                         margin: 0 auto;
                         .col{
                             padding: 20px 0px;
+                            text-align: left;
+                            img{
+                                width: 40px;
+                            }
                             &:hover {
                                 .black{
                                     display: block;
-                                    margin: 0 auto;
                                 }
                                 .gray{
                                     display: none;

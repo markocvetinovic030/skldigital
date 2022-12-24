@@ -6,15 +6,37 @@
 @import 'components/section-four';
 @import 'components/section-five';
 @import 'components/section-six';
+@import 'components/section-seven';
+@import 'components/section-eight';
+@import 'components/section-nine';
+@import 'components/footer';
 
 
-
-
-
-
-
-
-
-body{
+body {
     font-family: 'Montserrat';
+    scroll-behavior: smooth;
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        letter-spacing: 2px;
+    }
+
+    h4 {
+        letter-spacing: 2px;
+    }
+
+    h5 {
+        letter-spacing: 2px;
+    }
+
+    h6 {
+        letter-spacing: 2px;
+    }
 }
