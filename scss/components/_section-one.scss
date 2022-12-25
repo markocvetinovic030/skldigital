@@ -101,6 +101,25 @@ main {
     }
 }
 
+@media only screen and (max-width: 390px){
+    main{
+        .section-one{
+            .container{
+                .laptop{
+                    width: 300px;
+                }
+                .card-frame{
+                    display: block;
+                    .cards{
+                        width: 100%;
+                        margin-bottom: 50px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
 
 @keyframes slideIn {
     0% {

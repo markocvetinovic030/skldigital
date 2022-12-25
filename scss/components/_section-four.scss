@@ -57,3 +57,16 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-four{
+            .container{
+                .flex-box{
+                    display: block;
+                    
+                }
+            }
+        }
+    }
+}

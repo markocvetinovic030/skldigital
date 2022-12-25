@@ -116,3 +116,53 @@ main {
         }
     }
 }
+
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-five{
+            .flex-box{
+                display: block;
+                .left{
+                    width: 100%;
+                    .wallpaper{
+                        background-size: 200%;
+                        background-position: -200px 0px;
+                        padding: 50px 0px;
+                    }
+                }
+                .right{
+                    width: 100%;
+                    h5{
+                        padding: 0px;
+                        text-align: center;
+                        padding-top: 50px;
+                        margin-bottom: 20px;
+                    }
+                    .line1{
+                        margin: 0 auto;
+                        margin-bottom: 8px;
+                    }
+                    .line2{
+                        margin: 0 auto;
+                        margin-bottom: 8px;
+                    }
+                    .line3{
+                        margin: 0 auto;
+                        margin-bottom: 8px;
+                        margin-bottom: 50px;
+                    }
+                    .grid{
+                        display: block;
+                        .row{
+                            display: block;
+                            .col{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

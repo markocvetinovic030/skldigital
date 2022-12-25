@@ -57,3 +57,42 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-three{
+            .flex-box{
+                display: block;
+                .left{
+                    width: 100%;
+                    padding: 0px;
+                    .row{
+                        display: block;
+                        width: 90%;
+                        margin: 0 auto;
+                        .col{
+                            text-align: center;
+                            padding: 0px;
+                            margin: 0px;
+                            .main-p{
+                                padding: 0px;
+                                margin-top: 20px;
+                            }
+                            img{
+                                display: block;
+                                margin: 0 auto;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

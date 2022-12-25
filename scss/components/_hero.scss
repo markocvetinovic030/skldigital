@@ -62,6 +62,45 @@ main {
     }
 }
 
+@media only screen and (max-width: 390px){
+    main{
+        .hero{
+            #wallpaper{
+                background-size: 350%;
+                background-position: -220px 0px;
+                height: 800px;
+                .frame{
+                    padding-top: 100px;
+                    #carouselExampleControls{
+                        .carousel-inner{
+                            padding-top: 100px;
+                            h1{
+                                font-size: 1.5em;
+                            }
+                            p{
+                                max-width: 75%;
+                                font-size: 1em;
+                            }
+                            .button-frame{
+                                display: block;
+                                width: 100%;
+                                margin-top: 40px;
+                                button{
+                                    display: block;
+                                    margin: 0 auto;
+                                    margin-bottom: 30px;
+                                    color: black;
+                                    background-color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @keyframes slideIn {
     0% {

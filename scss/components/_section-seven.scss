@@ -29,3 +29,22 @@ main{
         }
     }
 }
+
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-seven{
+            .wallpaper{
+                .gradient{
+                    padding: 30px;
+                    .flex-box{
+                        display: block;
+                        .cards{
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -121,3 +121,23 @@ main{
         }
     }
 }
+
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-nine{
+            .container{
+                table{
+                    width: 100%;
+                }
+                .frame{
+                    .pay-frame{
+                        width: 70%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -18,8 +18,9 @@ window.addEventListener('scroll', animateElement);
 
 window.onscroll = function () {
     var header = document.querySelector('header');
+    const black = 'rgba(0,0,0,0.8)';
     if (window.pageYOffset > 1) {
-        header.style.backgroundColor = "black";
+        header.style.backgroundColor = black;
         header.style.transition = '1s all';
     } else {
         header.style.backgroundColor = "transparent";

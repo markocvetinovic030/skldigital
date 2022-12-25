@@ -28,6 +28,9 @@ header{
                 width: 60%;
                 nav{
                     padding-top: 5px;
+                    #hamburger{
+                        display: none
+                    }
                     ul{
                         @include flex-box;
                         li{
@@ -46,6 +49,36 @@ header{
     }
 }
 
+@media only screen and (max-width: 390px){
+    header{
+        padding-top: 20px;
+        .container{
+            .flex-box{
+                .left-box{
+                    width: 50%;
+                }
+                .left-box{
+                    padding-top: 3px;
+                }
+                .right-box{
+                    width: 50%;
+                    nav{
+                        padding: 0px;
+                        #hamburger{
+                            display: block;
+                            width: 40px;
+                            float: right;
+                            margin-right: 20px;
+                        }
+                        ul{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @keyframes slideIn {
     /* Kada se animacija počne, postavite element da se pojavi sa desne strane ekrana */

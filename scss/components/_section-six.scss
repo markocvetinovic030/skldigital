@@ -91,3 +91,32 @@ main{
         }
     }
 }
+
+@media only screen and (max-width: 390px){
+    main{
+        .section-six{
+            .container{
+                .flex-box{
+                    display: block;
+                    .left{
+                        .cards{
+                            text-align: center;
+                            padding: 0px;
+                        }
+                    }
+                    .right{
+                        .cards{
+                            text-align: center;
+                            padding: 0px;
+                        }
+                    }
+                    .middle{
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
